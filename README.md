@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Data Grid Assignment
 
-## Getting Started
+This project implements a data grid with the following features:
 
-First, run the development server:
+## Features:
+- **Table Columns:**
+  - **Checkbox**: Allows selection of rows.
+  - **Name**: The name of the item.
+  - **Device**: The associated device for the item.
+  - **Path**: The path related to the item.
+  - **Status**: Displays the current status of the item.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **"Select All" Checkbox:**
+  - Located at the top of the table.
+  - By default, it is labeled as "None Selected".
+ 
+- **"Download Selected" Button:**
+  - When clicked, an alert box will display all selected rows with their data (Name, Device, Path, and Status).
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Installation:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/imonica1998/DataGridAssignment.git
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. Navigate into the project directory:
+   ```bash
+   cd <project-directory>
+   ```
 
-## Learn More
+3. Install the required dependencies:
+   ```bash
+   npm install
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+4. Run the project:
+   ```bash
+   npm start
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Usage:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. **Selecting Rows**: Click the checkboxes next to the rows you want to select.
+2. **Select All**: Use the "Select All" checkbox at the top to select or deselect all rows.
+3. **Download Selected**: After selecting some rows, click the "Download Selected" button to see an alert with the selected rows' details.
 
-## Deploy on Vercel
+## Technologies Used:
+- React
+- JavaScript/TypeScript
+- HTML & CSS
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
